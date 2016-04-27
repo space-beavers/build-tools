@@ -5,7 +5,7 @@ MAINTAINER Chris Saunders <slapheadted@gmail.com>
 ##
 ## To use this image for your developer workflow:
 ##
-## docker run -it -p 3000:3000 -v $(pwd):/code spacebeavers/yeoman:latest
+## docker run -it -p 3000:3000 -v $(pwd):/code spacebeavers/build-tools:latest
 ##
 
 RUN apk add git --update
