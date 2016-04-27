@@ -1,11 +1,14 @@
 FROM alpine:3.3
 
 MAINTAINER Chris Saunders <slapheadted@gmail.com>
+MAINTAINER Mike Buckley <mikebuckley.canada@gmail.com>
 
 ##
 ## To use this image for your developer workflow:
 ##
 ## docker run -it -p 3000:3000 -v $(pwd):/code spacebeavers/build-tools:latest
+##
+## docker run -it -p 3000:3000 -v $(pwd):/code spacebeavers/build-tools:latest polymer:seed element-name
 ##
 
 RUN apk add git --update
