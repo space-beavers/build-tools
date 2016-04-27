@@ -16,6 +16,7 @@ RUN npm install -g yo
 
 RUN npm install -g generator-polymer
 
+# Credit to cthulhu666. https://github.com/cthulhu666/docker-yeoman
 # Add a yeoman user because yeoman doesn't like being root
 RUN adduser -D -g "" yeoman && \
   echo "yeoman ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
