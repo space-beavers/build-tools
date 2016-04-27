@@ -29,4 +29,4 @@ WORKDIR /code
 
 USER yeoman
 
-CMD ["yo", "polymer"]
+ENTRYPOINT ["/usr/bin/yo"]
