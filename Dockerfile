@@ -11,13 +11,11 @@ MAINTAINER Mike Buckley <mikebuckley.canada@gmail.com>
 ## docker run -it -p 3000:3000 -v $(pwd):/code spacebeavers/build-tools:latest polymer:seed element-name
 ##
 
-# TODO: Pin the following APK package versions. Not bothered to do it yet, it wasn't straight-forward.
+# TODO: Pin the following package versions.
 RUN apk add git --update
-
 RUN apk add nodejs --update
 
 RUN npm install -g yo
-
 RUN npm install -g generator-polymer
 
 # Credit to cthulhu666. https://github.com/cthulhu666/docker-yeoman
